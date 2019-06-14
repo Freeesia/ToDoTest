@@ -13,6 +13,11 @@
 		3C0C8CEC22AAD90B0037632F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8CEB22AAD90B0037632F /* Assets.xcassets */; };
 		3C0C8CEF22AAD90B0037632F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8CEE22AAD90B0037632F /* Preview Assets.xcassets */; };
 		3C0C8CF222AAD90B0037632F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8CF022AAD90B0037632F /* LaunchScreen.storyboard */; };
+		3C30E48422AC210B000A6201 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30E48322AC210B000A6201 /* Task.swift */; };
+		3C30E48622AC2477000A6201 /* TaskColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30E48522AC2477000A6201 /* TaskColor.swift */; };
+		3CABEEC422ACF074004400C9 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABEEC322ACF074004400C9 /* TaskData.swift */; };
+		3CBB1B6222AD094200226891 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB1B6122AD094200226891 /* TaskRowView.swift */; };
+		3CBB1B6422B3DF7F00226891 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB1B6322B3DF7F00226891 /* TaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3C0C8CEE22AAD90B0037632F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C0C8CF122AAD90B0037632F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0C8CF322AAD90C0037632F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C30E48322AC210B000A6201 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3C30E48522AC2477000A6201 /* TaskColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskColor.swift; sourceTree = "<group>"; };
+		3CABEEC322ACF074004400C9 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
+		3CBB1B6122AD094200226891 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		3CBB1B6322B3DF7F00226891 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		3C0C8CE422AAD90A0037632F /* ToDoTest */ = {
 			isa = PBXGroup;
 			children = (
+				3CBB1B6022AD08F100226891 /* Models */,
 				3C0C8CE522AAD90A0037632F /* AppDelegate.swift */,
 				3C0C8CE722AAD90A0037632F /* SceneDelegate.swift */,
 				3C0C8CE922AAD90A0037632F /* ContentView.swift */,
@@ -63,6 +74,8 @@
 				3C0C8CF022AAD90B0037632F /* LaunchScreen.storyboard */,
 				3C0C8CF322AAD90C0037632F /* Info.plist */,
 				3C0C8CED22AAD90B0037632F /* Preview Content */,
+				3CBB1B6122AD094200226891 /* TaskRowView.swift */,
+				3CBB1B6322B3DF7F00226891 /* TaskListView.swift */,
 			);
 			path = ToDoTest;
 			sourceTree = "<group>";
@@ -73,6 +86,16 @@
 				3C0C8CEE22AAD90B0037632F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CBB1B6022AD08F100226891 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C30E48322AC210B000A6201 /* Task.swift */,
+				3C30E48522AC2477000A6201 /* TaskColor.swift */,
+				3CABEEC322ACF074004400C9 /* TaskData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C30E48422AC210B000A6201 /* Task.swift in Sources */,
 				3C0C8CE622AAD90A0037632F /* AppDelegate.swift in Sources */,
+				3CABEEC422ACF074004400C9 /* TaskData.swift in Sources */,
+				3CBB1B6222AD094200226891 /* TaskRowView.swift in Sources */,
 				3C0C8CE822AAD90A0037632F /* SceneDelegate.swift in Sources */,
+				3C30E48622AC2477000A6201 /* TaskColor.swift in Sources */,
 				3C0C8CEA22AAD90A0037632F /* ContentView.swift in Sources */,
+				3CBB1B6422B3DF7F00226891 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

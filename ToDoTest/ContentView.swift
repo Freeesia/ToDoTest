@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        TaskListView(taskData: .mock(size: Int.random(in: 3..<10)))
     }
 }
 
