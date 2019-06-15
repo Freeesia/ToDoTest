@@ -19,6 +19,8 @@ struct TaskRowView : View {
                 .tapAction { self.taskData.toggleDone(self.task) }
 
             Text(task.text)
+
+            Spacer()
         }
         .padding()
         .background(task.color.color.opacity(0.8))

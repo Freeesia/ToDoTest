@@ -25,7 +25,7 @@ struct CreateTaskView : View {
                             return
                         }
                         self.taskData.create(self.text, self.color)
-                        self.clear()
+                        self.text = ""
                     }
             }
             
@@ -38,11 +38,6 @@ struct CreateTaskView : View {
             }
         }
         .padding(.horizontal)
-    }
-    
-    private func clear() {
-        text = ""
-        color = TaskColor.red
     }
 }
 
