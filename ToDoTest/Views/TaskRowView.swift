@@ -14,13 +14,8 @@ struct TaskRowView : View {
     var task: Task
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
-            if(task.isDone) {
-                Image(systemName: "checkmark.square.fill")
-                    .imageScale(.large)
-            }else{
-                Image(systemName: "checkmark.square")
-                    .imageScale(.large)
-            }
+            Image(systemName: task.isDone ? "checkmark.square.fill" : "checkmark.square")
+                .imageScale(.large)
             Text(task.text)
                 .font(.title)
 

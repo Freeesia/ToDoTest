@@ -18,6 +18,7 @@
 		3C30E48422AC210B000A6201 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30E48322AC210B000A6201 /* Task.swift */; };
 		3C30E48622AC2477000A6201 /* TaskColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30E48522AC2477000A6201 /* TaskColor.swift */; };
 		3CABEEC422ACF074004400C9 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABEEC322ACF074004400C9 /* TaskData.swift */; };
+		3CDBA37D22B4EA560096EA1A /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3C30E48322AC210B000A6201 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3C30E48522AC2477000A6201 /* TaskColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskColor.swift; sourceTree = "<group>"; };
 		3CABEEC322ACF074004400C9 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
+		3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				3C08702122B4D76B00177EBE /* TaskRowView.swift */,
 				3C08702322B4D95000177EBE /* TaskListView.swift */,
+				3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				3C08702222B4D76C00177EBE /* TaskRowView.swift in Sources */,
 				3C0C8CE822AAD90A0037632F /* SceneDelegate.swift in Sources */,
 				3C30E48622AC2477000A6201 /* TaskColor.swift in Sources */,
+				3CDBA37D22B4EA560096EA1A /* CreateTaskView.swift in Sources */,
 				3C0C8CEA22AAD90A0037632F /* ContentView.swift in Sources */,
 				3C08702422B4D95000177EBE /* TaskListView.swift in Sources */,
 			);

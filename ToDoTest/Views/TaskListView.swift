@@ -14,6 +14,7 @@ struct TaskListView : View {
     var body: some View {
         NavigationView {
             Group {
+                CreateTaskView()
                 Toggle(isOn: $test) {
                     Text("完了済みタスク")
                 }
