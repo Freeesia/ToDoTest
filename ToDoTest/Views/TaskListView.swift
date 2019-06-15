@@ -10,20 +10,17 @@ import SwiftUI
 
 struct TaskListView : View {
     @EnvironmentObject private var taskData: TaskData
-    @State private var test = false
     var body: some View {
         NavigationView {
             Group {
                 CreateTaskView()
-                Toggle(isOn: $test) {
+                Toggle(isOn: $taskData.visibleDoneTasks) {
                     Text("完了済みタスク")
                 }
                 .padding(.horizontal)
                 
                 List(taskData.tasks) { task in
-                    if (self.test || !task.isDone) {
-                        TaskRowView(task: task)
-                    }
+                    TaskRowView(task: task)
                 }
             }
             .navigationBarTitle(Text("Todos"))

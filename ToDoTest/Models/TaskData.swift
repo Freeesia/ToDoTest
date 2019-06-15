@@ -11,38 +11,41 @@ import SwiftUI
 
 final class TaskData: BindableObject {
     let didChange = PassthroughSubject<TaskData, Never>()
-    
-    var tasks: [Task] = [] {
-        didSet{
+    private var _tasks: [Task] = [] {
+        didSet {
             didChange.send(self)
         }
     }
     
-    var hideDoneTasks = true {
+    var tasks: [Task] {
+        get { _tasks.filter { t in visibleDoneTasks || !t.isDone } }
+    }
+    
+    var visibleDoneTasks = false {
         didSet {
             didChange.send(self)
         }
     }
     
     func index(_ task:Task ) -> Int {
-        tasks.firstIndex{$0.id == task.id}!
+        _tasks.firstIndex{$0.id == task.id}!
     }
     
     func create(_ text:String, _ color:TaskColor) {
-        tasks.append(Task(text: text, color: color))
+        _tasks.append(Task(text: text, color: color))
     }
     
     func toggleDone(_ task:Task) {
-        tasks[index(task)].isDone.toggle()
+        _tasks[index(task)].isDone.toggle()
     }
     
     func delete(_ task:Task) {
-        tasks.remove(at: index(task))
+        _tasks.remove(at: index(task))
     }
     
     static func mock(size:Int = 3) -> TaskData {
         let data = TaskData()
-        data.tasks = (0..<size).map{_ in Task.mock()}
+        data._tasks = (0..<size).map{_ in Task.mock()}
         return data
     }
 }

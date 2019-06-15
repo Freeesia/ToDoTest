@@ -9,15 +9,16 @@
 import SwiftUI
 
 struct TaskRowView : View {
-//    @EnvironmentObject private var taskData: TaskData
+    @EnvironmentObject private var taskData: TaskData
     @State private var alertIsShown = false
     var task: Task
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
-            Image(systemName: task.isDone ? "checkmark.square.fill" : "checkmark.square")
+            Image(systemName: task.isDone ? "checkmark.circle.fill" : "checkmark.circle")
                 .imageScale(.large)
+                .tapAction { self.taskData.toggleDone(self.task) }
+
             Text(task.text)
-                .font(.title)
 
             Spacer()
 
@@ -35,7 +36,9 @@ struct TaskRowView : View {
                 Alert(
                     title: Text("確認"),
                     message: Text("「\(self.task.text)」を削除しますか？"),
-                    primaryButton: .destructive(Text("削除")),
+                    primaryButton: .destructive(Text("削除")) {
+                        self.taskData.delete(self.task)
+                    },
                     secondaryButton: .cancel())
             }
         }

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CreateTaskView : View {
+    @EnvironmentObject private var taskData: TaskData
     @State private var text = ""
     @State private var color = TaskColor.red
     var body: some View {
@@ -23,6 +24,7 @@ struct CreateTaskView : View {
                         guard !self.text.isEmpty else {
                             return
                         }
+                        self.taskData.create(self.text, self.color)
                         self.clear()
                     }
             }
