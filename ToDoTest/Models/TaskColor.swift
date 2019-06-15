@@ -13,7 +13,6 @@ enum TaskColor: CaseIterable {
     case red
     case blue
     case green
-    case white
     case yellow
     case pink
     case orange
@@ -27,8 +26,6 @@ enum TaskColor: CaseIterable {
             return .blue
         case .green:
             return .green
-        case .white:
-            return .white
         case .yellow:
             return .yellow
         case .pink:
