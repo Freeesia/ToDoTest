@@ -19,28 +19,6 @@ struct TaskRowView : View {
                 .tapAction { self.taskData.toggleDone(self.task) }
 
             Text(task.text)
-
-            Spacer()
-
-            Image(systemName: "trash.fill")
-                .imageScale(.large)
-                .foregroundColor(.gray)
-                .tapAction { self.alertIsShown = true }
-//            Button(action: { self.alertIsShown = true }) {
-//                Image(systemName: "trash.fill")
-//                    .imageScale(.large)
-//                    .foregroundColor(.gray)
-//                    .padding(5) //Imageそのままだとた当たり判定が0なので当たり判定分作る
-//            }
-            .presentation($alertIsShown) {
-                Alert(
-                    title: Text("確認"),
-                    message: Text("「\(self.task.text)」を削除しますか？"),
-                    primaryButton: .destructive(Text("削除")) {
-                        self.taskData.delete(self.task)
-                    },
-                    secondaryButton: .cancel())
-            }
         }
         .padding()
         .background(task.color.color.opacity(0.8))

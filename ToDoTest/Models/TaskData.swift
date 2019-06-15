@@ -43,6 +43,10 @@ final class TaskData: BindableObject {
         _tasks.remove(at: index(task))
     }
     
+    func delete(_ index:Int) {
+        delete(tasks[index])
+    }
+    
     static func mock(size:Int = 3) -> TaskData {
         let data = TaskData()
         data._tasks = (0..<size).map{_ in Task.mock()}

@@ -19,9 +19,11 @@ struct TaskListView : View {
                 }
                 .padding(.horizontal)
                 
-                List(taskData.tasks) { task in
-                    TaskRowView(task: task)
+                List {
+                    ForEach(taskData.tasks) { t in TaskRowView(task: t) }
+                        .onDelete { i in self.taskData.delete(i.first!) }
                 }
+                
             }
             .navigationBarTitle(Text("Todos"))
         }
