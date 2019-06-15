@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TaskRowView : View {
-    @EnvironmentObject private var taskData: TaskData?
+//    @EnvironmentObject private var taskData: TaskData
     @State private var alertIsShown = false
     var task: Task
     var body: some View {
@@ -25,13 +25,17 @@ struct TaskRowView : View {
                 .font(.title)
 
             Spacer()
-            
-            Button(action: { self.alertIsShown = true }) {
-                Image(systemName: "trash.fill")
-                    .imageScale(.large)
-                    .padding(5) //Imageそのままだとた当たり判定が0なので当たり判定分作る
-                    .foregroundColor(.gray)
-            }
+
+            Image(systemName: "trash.fill")
+                .imageScale(.large)
+                .foregroundColor(.gray)
+                .tapAction { self.alertIsShown = true }
+//            Button(action: { self.alertIsShown = true }) {
+//                Image(systemName: "trash.fill")
+//                    .imageScale(.large)
+//                    .foregroundColor(.gray)
+//                    .padding(5) //Imageそのままだとた当たり判定が0なので当たり判定分作る
+//            }
             .presentation($alertIsShown) {
                 Alert(
                     title: Text("確認"),
