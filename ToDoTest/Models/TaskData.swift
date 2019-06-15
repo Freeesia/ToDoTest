@@ -6,21 +6,21 @@
 //  Copyright © 2019 Jin. All rights reserved.
 //
 
-import Foundation
 import Combine
+import SwiftUI
 
-final class TaskData {
-    let changed = PassthroughSubject<TaskData, Never>()
+final class TaskData: BindableObject {
+    let didChange = PassthroughSubject<TaskData, Never>()
     
     var tasks: [Task] = [] {
         didSet{
-            changed.send(self)
+            didChange.send(self)
         }
     }
     
     var hideDoneTasks = true {
         didSet {
-            changed.send(self)
+            didChange.send(self)
         }
     }
     

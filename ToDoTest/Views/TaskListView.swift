@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct TaskListView : View {
+    @EnvironmentObject private var taskData: TaskData
     @State private var test = false
-    var taskData: TaskData
     var body: some View {
         NavigationView {
             Group {
@@ -34,7 +34,7 @@ struct TaskListView : View {
 #if DEBUG
 struct TaskListView_Previews : PreviewProvider {
     static var previews: some View {
-        TaskListView(taskData: .mock())
+        TaskListView()
     }
 }
 #endif
