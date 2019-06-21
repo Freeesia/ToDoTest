@@ -8,5 +8,6 @@ target 'ToDoTest' do
 
   # Pods for ToDoTest
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 end
