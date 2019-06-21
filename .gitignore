@@ -30,3 +30,4 @@ DerivedData/
 /*.gcno
 
 Pods/
+GoogleService-Info.plist
