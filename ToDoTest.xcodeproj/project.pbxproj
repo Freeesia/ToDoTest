@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,17 @@
 		3C08702422B4D95000177EBE /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08702322B4D95000177EBE /* TaskListView.swift */; };
 		3C0C8CE622AAD90A0037632F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C8CE522AAD90A0037632F /* AppDelegate.swift */; };
 		3C0C8CE822AAD90A0037632F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C8CE722AAD90A0037632F /* SceneDelegate.swift */; };
-		3C0C8CEA22AAD90A0037632F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C8CE922AAD90A0037632F /* ContentView.swift */; };
 		3C0C8CEC22AAD90B0037632F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8CEB22AAD90B0037632F /* Assets.xcassets */; };
 		3C0C8CEF22AAD90B0037632F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8CEE22AAD90B0037632F /* Preview Assets.xcassets */; };
 		3C0C8CF222AAD90B0037632F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C8CF022AAD90B0037632F /* LaunchScreen.storyboard */; };
+		3C2D8D3322C672DA00D01564 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D8D3222C672DA00D01564 /* RootView.swift */; };
 		3C30E48422AC210B000A6201 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30E48322AC210B000A6201 /* Task.swift */; };
 		3C30E48622AC2477000A6201 /* TaskColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30E48522AC2477000A6201 /* TaskColor.swift */; };
+		3CA98D5C22BD436600138D60 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA98D5B22BD436600138D60 /* UserViewModel.swift */; };
+		3CA98D5F22BD45C900138D60 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA98D5E22BD45C900138D60 /* Auth.swift */; };
+		3CA98D6222BD47E200138D60 /* AnySubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA98D6122BD47E200138D60 /* AnySubscription.swift */; };
+		3CA98D6822BF754C00138D60 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA98D6722BF754C00138D60 /* SignUpView.swift */; };
+		3CA98D6A22C662B700138D60 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA98D6922C662B700138D60 /* Result.swift */; };
 		3CABEEC422ACF074004400C9 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABEEC322ACF074004400C9 /* TaskData.swift */; };
 		3CDBA37D22B4EA560096EA1A /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */; };
 		3CEF3FB022BD20640012054C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF3FAF22BD20640012054C /* GoogleService-Info.plist */; };
@@ -31,13 +36,18 @@
 		3C0C8CE222AAD90A0037632F /* ToDoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0C8CE522AAD90A0037632F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C0C8CE722AAD90A0037632F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C0C8CE922AAD90A0037632F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C0C8CEB22AAD90B0037632F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0C8CEE22AAD90B0037632F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C0C8CF122AAD90B0037632F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0C8CF322AAD90C0037632F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C2D8D3222C672DA00D01564 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		3C30E48322AC210B000A6201 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3C30E48522AC2477000A6201 /* TaskColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskColor.swift; sourceTree = "<group>"; };
+		3CA98D5B22BD436600138D60 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3CA98D5E22BD45C900138D60 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		3CA98D6122BD47E200138D60 /* AnySubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySubscription.swift; sourceTree = "<group>"; };
+		3CA98D6722BF754C00138D60 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3CA98D6922C662B700138D60 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3CABEEC322ACF074004400C9 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
 		3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		3CEF3FAF22BD20640012054C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -77,16 +87,19 @@
 		3C0C8CE422AAD90A0037632F /* ToDoTest */ = {
 			isa = PBXGroup;
 			children = (
+				3CA98D6022BD47D400138D60 /* ComponentModel */,
+				3CA98D5D22BD45AC00138D60 /* Extension */,
+				3CA98D5A22BD428C00138D60 /* User */,
 				3CEF3FAF22BD20640012054C /* GoogleService-Info.plist */,
 				3CDBA37B22B4E9DD0096EA1A /* Views */,
 				3CBB1B6022AD08F100226891 /* Models */,
 				3C0C8CE522AAD90A0037632F /* AppDelegate.swift */,
 				3C0C8CE722AAD90A0037632F /* SceneDelegate.swift */,
-				3C0C8CE922AAD90A0037632F /* ContentView.swift */,
 				3C0C8CEB22AAD90B0037632F /* Assets.xcassets */,
 				3C0C8CF022AAD90B0037632F /* LaunchScreen.storyboard */,
 				3C0C8CF322AAD90C0037632F /* Info.plist */,
 				3C0C8CED22AAD90B0037632F /* Preview Content */,
+				3C2D8D3222C672DA00D01564 /* RootView.swift */,
 			);
 			path = ToDoTest;
 			sourceTree = "<group>";
@@ -97,6 +110,32 @@
 				3C0C8CEE22AAD90B0037632F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CA98D5A22BD428C00138D60 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3CA98D5B22BD436600138D60 /* UserViewModel.swift */,
+				3CA98D6722BF754C00138D60 /* SignUpView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		3CA98D5D22BD45AC00138D60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3CA98D5E22BD45C900138D60 /* Auth.swift */,
+				3CA98D6922C662B700138D60 /* Result.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3CA98D6022BD47D400138D60 /* ComponentModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CA98D6122BD47E200138D60 /* AnySubscription.swift */,
+			);
+			path = ComponentModel;
 			sourceTree = "<group>";
 		};
 		3CBB1B6022AD08F100226891 /* Models */ = {
@@ -125,7 +164,6 @@
 				220EF6DC3CB68025D6ECD7BB /* Pods-ToDoTest.debug.xcconfig */,
 				F5065A125681E211FC2466F1 /* Pods-ToDoTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,13 +292,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C30E48422AC210B000A6201 /* Task.swift in Sources */,
+				3CA98D6222BD47E200138D60 /* AnySubscription.swift in Sources */,
 				3C0C8CE622AAD90A0037632F /* AppDelegate.swift in Sources */,
 				3CABEEC422ACF074004400C9 /* TaskData.swift in Sources */,
+				3C2D8D3322C672DA00D01564 /* RootView.swift in Sources */,
+				3CA98D6A22C662B700138D60 /* Result.swift in Sources */,
+				3CA98D5C22BD436600138D60 /* UserViewModel.swift in Sources */,
 				3C08702222B4D76C00177EBE /* TaskRowView.swift in Sources */,
 				3C0C8CE822AAD90A0037632F /* SceneDelegate.swift in Sources */,
+				3CA98D5F22BD45C900138D60 /* Auth.swift in Sources */,
+				3CA98D6822BF754C00138D60 /* SignUpView.swift in Sources */,
 				3C30E48622AC2477000A6201 /* TaskColor.swift in Sources */,
 				3CDBA37D22B4EA560096EA1A /* CreateTaskView.swift in Sources */,
-				3C0C8CEA22AAD90A0037632F /* ContentView.swift in Sources */,
 				3C08702422B4D95000177EBE /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
