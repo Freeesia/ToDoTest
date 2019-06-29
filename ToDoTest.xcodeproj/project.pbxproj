@@ -25,6 +25,7 @@
 		3CA98D6A22C662B700138D60 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA98D6922C662B700138D60 /* Result.swift */; };
 		3CABEEC422ACF074004400C9 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABEEC322ACF074004400C9 /* TaskData.swift */; };
 		3CDBA37D22B4EA560096EA1A /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */; };
+		3CEC2BD122C75FEC00D8BB6F /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC2BD022C75FEC00D8BB6F /* UserView.swift */; };
 		3CEF3FB022BD20640012054C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF3FAF22BD20640012054C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		3CA98D6922C662B700138D60 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3CABEEC322ACF074004400C9 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
 		3CDBA37C22B4EA560096EA1A /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		3CEC2BD022C75FEC00D8BB6F /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		3CEF3FAF22BD20640012054C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5065A125681E211FC2466F1 /* Pods-ToDoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoTest.release.xcconfig"; path = "Target Support Files/Pods-ToDoTest/Pods-ToDoTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			children = (
 				3CA98D5B22BD436600138D60 /* UserViewModel.swift */,
 				3CA98D6722BF754C00138D60 /* SignUpView.swift */,
+				3CEC2BD022C75FEC00D8BB6F /* UserView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				3C2D8D3322C672DA00D01564 /* RootView.swift in Sources */,
 				3CA98D6A22C662B700138D60 /* Result.swift in Sources */,
 				3CA98D5C22BD436600138D60 /* UserViewModel.swift in Sources */,
+				3CEC2BD122C75FEC00D8BB6F /* UserView.swift in Sources */,
 				3C08702222B4D76C00177EBE /* TaskRowView.swift in Sources */,
 				3C0C8CE822AAD90A0037632F /* SceneDelegate.swift in Sources */,
 				3CA98D5F22BD45C900138D60 /* Auth.swift in Sources */,

@@ -51,6 +51,7 @@ struct SignUpView : View {
                     Text("Sign in")
                         .foregroundColor(Color.white)
                 }
+                    .disabled(!name.isEmpty)
                     .frame(height: 44.0)
                     .padding(.horizontal)
                     .background(Color.green, cornerRadius: 8.0)

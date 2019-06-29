@@ -9,7 +9,10 @@
 import SwiftUI
 
 struct TaskListView : View {
-    @EnvironmentObject private var taskData: TaskData
+    @EnvironmentObject
+    private var taskData: TaskData
+    @EnvironmentObject
+    private var viewModel: UserViewModel
     var body: some View {
         NavigationView {
             Group {
@@ -26,6 +29,10 @@ struct TaskListView : View {
                 
             }
             .navigationBarTitle(Text("Todos"))
+            .navigationBarItems(trailing:
+                PresentationButton(
+                    Image(systemName: "person.crop.circle").imageScale(.large),
+                    destination: UserView().environmentObject(viewModel)))
         }
     }
 }
