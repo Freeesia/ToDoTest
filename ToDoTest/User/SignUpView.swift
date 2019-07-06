@@ -51,10 +51,11 @@ struct SignUpView : View {
                     Text("Sign in")
                         .foregroundColor(Color.white)
                 }
-                    .disabled(!name.isEmpty)
+//                    Beta2でバインドが反映されなくなった
+//                    .disabled(!name.isEmpty)
                     .frame(height: 44.0)
                     .padding(.horizontal)
-                    .background(Color.green, cornerRadius: 8.0)
+                    .background( name.isEmpty ? Color.gray : Color.green, cornerRadius: 8.0)
                     // ログインエラーを表示したい
 //                    .presentation($errShown) {
 //                        Alert(title: Text("ログイン失敗"),
