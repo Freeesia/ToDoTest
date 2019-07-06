@@ -30,9 +30,10 @@ struct TaskListView : View {
             }
             .navigationBarTitle(Text("Todos"))
             .navigationBarItems(trailing:
-                PresentationButton(
-                    Image(systemName: "person.crop.circle").imageScale(.large),
-                    destination: UserView().environmentObject(viewModel)))
+                PresentationButton(destination: UserView().environmentObject(viewModel))
+                {
+                    Image(systemName: "person.crop.circle").imageScale(.large)
+                })
         }
     }
 }
