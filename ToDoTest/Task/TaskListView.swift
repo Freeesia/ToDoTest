@@ -10,27 +10,27 @@ import SwiftUI
 
 struct TaskListView : View {
     @EnvironmentObject
-    private var taskData: TaskData
+    private var viewModel: TaskViewModel
     @EnvironmentObject
-    private var viewModel: UserViewModel
+    private var user: UserViewModel
     var body: some View {
         NavigationView {
             Group {
                 CreateTaskView()
-                Toggle(isOn: $taskData.visibleDoneTasks) {
+                Toggle(isOn: viewModel.visibleDoneTasks) {
                     Text("完了済みタスク")
                 }
                 .padding(.horizontal)
                 
                 List {
-                    ForEach(taskData.tasks) { t in TaskRowView(task: t) }
-                        .onDelete { i in self.taskData.delete(i.first!) }
+                    ForEach(viewModel.tasks) { t in TaskRowView(task: t) }
+                        .onDelete { i in self.viewModel.delete(i.first!) }
                 }
                 
             }
             .navigationBarTitle(Text("Todos"))
             .navigationBarItems(trailing:
-                PresentationButton(destination: UserView().environmentObject(viewModel))
+                PresentationButton(destination: UserView().environmentObject(user))
                 {
                     Image(systemName: "person.crop.circle").imageScale(.large)
                 })

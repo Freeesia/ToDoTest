@@ -26,6 +26,26 @@ final class UserViewModel : BindableObject {
         Auth.auth().stateDidChange()
             .map { $0.user }
             .merge(with: userDidCreate.map { Auth.auth().currentUser })
+//            .flatMap { user in
+//                AnyPublisher<Document<Models.User>?, Error> { sub in
+//                    guard let user = user else {
+//                        _ = sub.receive(nil)
+//                        sub.receive(completion:.finished)
+//                        return
+//                    }
+//                    Document<Models.User>.get(documentID: user.uid) { res in
+//                        switch res {
+//                        case let .success(u):
+//                            _ = sub.receive(u)
+//                            sub.receive(completion:.finish)
+//                        case let .failure(error):
+//                            sub.receive(completion:.failure(error))
+//                            
+//                        }
+//                    }
+//                }
+//                .replaceError(with: nil)
+//            }
             .map{ ($0 != nil) }
             .receive(subscriber: stateSubscriber)
     }

@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct TaskRowView : View {
-    @EnvironmentObject private var taskData: TaskData
-    @State private var alertIsShown = false
+    @EnvironmentObject
+    private var viewModel: TaskViewModel
     var task: Task
     var body: some View {
         HStack(alignment: .center, spacing: 16) {
             Image(systemName: task.isDone ? "checkmark.circle.fill" : "checkmark.circle")
                 .imageScale(.large)
-                .tapAction { self.taskData.toggleDone(self.task) }
+                .tapAction { self.viewModel.toggleDone(self.task) }
 
             Text(task.text)
 

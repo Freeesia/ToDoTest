@@ -9,8 +9,8 @@
 import Combine
 import SwiftUI
 
-final class TaskData: BindableObject {
-    let didChange = PassthroughSubject<TaskData, Never>()
+final class TaskViewModel: BindableObject {
+    let didChange = PassthroughSubject<TaskViewModel, Never>()
     private var _tasks: [Task] = [] {
         didSet {
             didChange.send(self)
@@ -32,7 +32,7 @@ final class TaskData: BindableObject {
     }
     
     func create(_ text:String, _ color:TaskColor) {
-        _tasks.append(Task(text: text, color: color))
+        _tasks.append(Task(text, color))
     }
     
     func toggleDone(_ task:Task) {
@@ -47,8 +47,8 @@ final class TaskData: BindableObject {
         delete(tasks[index])
     }
     
-    static func mock(size:Int = 3) -> TaskData {
-        let data = TaskData()
+    static func mock(size:Int = 3) -> TaskViewModel {
+        let data = TaskViewModel()
         data._tasks = (0..<size).map{_ in Task.mock()}
         return data
     }

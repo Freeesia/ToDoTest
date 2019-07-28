@@ -13,7 +13,7 @@ struct RootView : View {
     private var viewModel: UserViewModel
     var body: some View {
         if viewModel.isAuthenticated {
-            return AnyView(TaskListView().environmentObject(TaskData.mock()))
+            return AnyView(TaskListView().environmentObject(TaskViewModel.mock()))
         } else {
             return AnyView(SignUpView())
         }

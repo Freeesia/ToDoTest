@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-enum TaskColor: CaseIterable {
+enum TaskColor: String, CaseIterable {
     case red
     case blue
     case green
