@@ -12,13 +12,13 @@ import SwiftUI
 
 final class UserViewModel : BindableObject {
     
-    let didChange = PassthroughSubject<UserViewModel, Never>()
+    let willChange = PassthroughSubject<UserViewModel, Never>()
     private let userDidCreate = PassthroughSubject<(), Never>()
     private lazy var stateSubscriber = Subscribers.Assign(object: self, keyPath: \.isAuthenticated)
     
     var isAuthenticated: Bool = false {
         didSet {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     

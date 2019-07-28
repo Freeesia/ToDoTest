@@ -30,8 +30,8 @@ struct SignUpView : View {
                 Text("Name")
                     .font(.subheadline)
                     .underline()
-                
-                TextField($name, placeholder: Text("名前を入力してください"))
+                                
+                TextField("名前を入力してください", text: $name)
                     .frame(height:40)
                     .padding(.horizontal, 8.0)
                     .border(Color.gray, cornerRadius: 8)

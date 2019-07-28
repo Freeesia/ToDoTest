@@ -10,10 +10,10 @@ import Combine
 import SwiftUI
 
 final class TaskData: BindableObject {
-    let didChange = PassthroughSubject<TaskData, Never>()
+    let willChange = PassthroughSubject<TaskData, Never>()
     private var _tasks: [Task] = [] {
         didSet {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     
@@ -23,7 +23,7 @@ final class TaskData: BindableObject {
     
     var visibleDoneTasks = false {
         didSet {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     
